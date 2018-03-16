@@ -59,6 +59,6 @@ public class UserDao {
         Class.forName("com.mysql.jdbc.Driver");
 
         return DriverManager.getConnection("jdbc:mysql://localhost/jeju?characterEncoding=utf-8"
-                , "root", "rntmf1rntmf2");
+                , "root", "1234");
     }
 }

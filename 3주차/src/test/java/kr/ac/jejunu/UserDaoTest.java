@@ -10,13 +10,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class UserDaoTest {
     private UserDao jejuUserDao;
-    private UserDao hallaUserDao;
+//    private UserDao hallaUserDao;
 
     //before 하면 테스트 실행전에 무조건 실행됨
     @Before
     public void setup(){
-        jejuUserDao = new JejuUserDao();
-        hallaUserDao = new HallaUserDao();
+        jejuUserDao = new UserDao();
+//        hallaUserDao = new HallaUserDao();
     }
 
     @Test

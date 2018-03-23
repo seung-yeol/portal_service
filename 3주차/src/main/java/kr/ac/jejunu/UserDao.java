@@ -2,10 +2,13 @@ package kr.ac.jejunu;
 
 import java.sql.*;
 
-public abstract class UserDao {
+public class UserDao {
+    //strategy pattern 의 context는 변하지 않는 부분.
+    private final ConnectionMaker connectionMaker = new JejuConnectionMaker();
+
     public User get(int id) throws ClassNotFoundException, SQLException {
         //mysql driver load
-        Connection connection = getConnection();
+        Connection connection = connectionMaker.getConnection();
 
         //sql 작성하고
         PreparedStatement preparedStatement =
@@ -32,7 +35,7 @@ public abstract class UserDao {
     }
 
     public Integer insert(User user) throws ClassNotFoundException, SQLException {
-        Connection connection = getConnection();
+        Connection connection = connectionMaker.getConnection();
 
         PreparedStatement preparedStatement =
                 connection.prepareStatement(
@@ -55,10 +58,4 @@ public abstract class UserDao {
         return id;
     }
 
-    public abstract Connection getConnection() throws ClassNotFoundException, SQLException;/* {
-        Class.forName("com.mysql.jdbc.Driver");
-
-        return DriverManager.getConnection("jdbc:mysql://localhost/jeju?characterEncoding=utf-8"
-                , "root", "1234");
-    }*/
 }

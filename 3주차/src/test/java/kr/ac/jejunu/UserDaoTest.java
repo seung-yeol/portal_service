@@ -10,12 +10,15 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class UserDaoTest {
     private UserDao jejuUserDao;
+    private DaoFactory daoFactory;
 //    private UserDao hallaUserDao;
 
     //before 하면 테스트 실행전에 무조건 실행됨
     @Before
     public void setup(){
-        jejuUserDao = new UserDao();
+        daoFactory = DaoFactory.getInstance();
+
+        jejuUserDao = daoFactory.getUserDao();
 //        hallaUserDao = new HallaUserDao();
     }
 
@@ -46,7 +49,7 @@ public class UserDaoTest {
         assertThat(insertedUser.getPassword(), is(user.getPassword()));
     }
 
-    @Test
+    /*@Test
     //Exception처리는 확실히 처리할 수 있을때 catch해내어야함.
     public void hallaGet() throws SQLException, ClassNotFoundException {
         int id= 1;
@@ -71,5 +74,5 @@ public class UserDaoTest {
         assertThat(insertedUser.getId(), is(id));
         assertThat(insertedUser.getName(), is(user.getName()));
         assertThat(insertedUser.getPassword(), is(user.getPassword()));
-    }
+    }*/
 }

@@ -4,7 +4,11 @@ import java.sql.*;
 
 public class UserDao {
     //strategy pattern 의 context는 변하지 않는 부분.
-    private final ConnectionMaker connectionMaker = new JejuConnectionMaker();
+    private final ConnectionMaker connectionMaker;
+
+    public UserDao(ConnectionMaker connectionMaker) {
+        this.connectionMaker = connectionMaker;
+    }
 
     public User get(int id) throws ClassNotFoundException, SQLException {
         //mysql driver load

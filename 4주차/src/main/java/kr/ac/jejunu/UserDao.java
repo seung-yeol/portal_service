@@ -16,6 +16,7 @@ public class UserDao {
         ResultSet resultSet = null;
         User user;
 
+        //try 안의 작업을 하다가 오류가 생긴경우 서버의 연결을 해제해주어야해서 finally부분으로 close()시켜줌
         try {
             connection = connectionMaker.getConnection();
 
@@ -33,12 +34,14 @@ public class UserDao {
             if (resultSet != null)
                 resultSet.close();
             if (preparedStatement != null)
+                //preparedStatement가 만들어 지기도 전에 에러가 생성될수 있으므로
                 try {
                     preparedStatement.close();
                 } catch (SQLException e){
                     e.printStackTrace();
                 }
             if (connection != null)
+                //connection이 만들어 지기도 전에 에러가 생성될수 있으므로
                 try {
                     connection.close();
                 } catch (SQLException e) {

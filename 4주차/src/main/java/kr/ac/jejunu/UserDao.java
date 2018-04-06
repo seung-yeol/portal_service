@@ -11,49 +11,85 @@ public class UserDao {
     }
 
     public User get(int id) throws ClassNotFoundException, SQLException {
-        //mysql driver load
-        Connection connection = connectionMaker.getConnection();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        User user;
 
-        //sql 작성하고
-        PreparedStatement preparedStatement =
-                connection.prepareStatement("select * from userinfo where id = ?");
-        preparedStatement.setInt(1, id);
+        try {
+            connection = connectionMaker.getConnection();
 
-        //sql 실행하고
-        ResultSet resultSet = preparedStatement.executeQuery();
+            preparedStatement = connection.prepareStatement("select * from userinfo where id = ?");
+            preparedStatement.setInt(1, id);
 
-        //결과를 User 에 매핑하고
-        resultSet.next();
-        User user = new User();
-        user.setId(resultSet.getInt("id"));
-        user.setName(resultSet.getString("name"));
-        user.setPassword(resultSet.getString("password"));
+            resultSet = preparedStatement.executeQuery();
 
-        //자원을 해지하고
+            resultSet.next();
+            user = new User();
+            user.setId(resultSet.getInt("id"));
+            user.setName(resultSet.getString("name"));
+            user.setPassword(resultSet.getString("password"));
+        } finally {
+            if (resultSet != null)
+                resultSet.close();
+            if (preparedStatement != null)
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e){
+                    e.printStackTrace();
+                }
+            if (connection != null)
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+        }
+
         resultSet.close();
         preparedStatement.close();
         connection.close();
 
-        //결과를 리턴한다.
         return user;
     }
 
     public Integer insert(User user) throws ClassNotFoundException, SQLException {
-        Connection connection = connectionMaker.getConnection();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        Integer id;
 
-        PreparedStatement preparedStatement =
-                connection.prepareStatement(
-                        "insert into userinfo(name, password) VALUES(?,?)");
-        preparedStatement.setString(1, user.getName());
-        preparedStatement.setString(2, user.getPassword());
+        try {
+            connection = connectionMaker.getConnection();
 
-        preparedStatement.executeUpdate();
+            preparedStatement = connection.prepareStatement(
+                    "insert into userinfo(name, password) VALUES(?,?)");
+            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(2, user.getPassword());
 
-        preparedStatement = connection.prepareStatement("select last_insert_id()");
-        ResultSet resultSet = preparedStatement.executeQuery();
-        resultSet.next();
+            preparedStatement.executeUpdate();
 
-        Integer id = resultSet.getInt(1);
+            preparedStatement = connection.prepareStatement("select last_insert_id()");
+            resultSet = preparedStatement.executeQuery();
+            resultSet.next();
+
+            id = resultSet.getInt(1);
+        } finally {
+            if (resultSet != null)
+                resultSet.close();
+            if (preparedStatement != null)
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e){
+                    e.printStackTrace();
+                }
+            if (connection != null)
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+        }
 
         resultSet.close();
         preparedStatement.close();
@@ -61,5 +97,4 @@ public class UserDao {
 
         return id;
     }
-
 }

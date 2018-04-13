@@ -18,8 +18,9 @@ public class UserDao {
         User user = null;
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement("select * from userinfo where id = ?");
-            preparedStatement.setInt(1, id);
+            StatementStrategy statementStrategy = new GetUserStatementStrategy(id);
+            preparedStatement = statementStrategy.makeStatement(connection);
+
             resultSet = preparedStatement.executeQuery();
             if(resultSet.next()) {
                 user = new User();
@@ -57,14 +58,14 @@ public class UserDao {
         Integer id;
         try {
             connection = dataSource.getConnection();
-            StatementStrategy statementStrategy = null;
-            preparedStatement = statementStrategy.makeStatement(user, connection);
-//            preparedStatement = makePrepareStatement(user, connection);
+            StatementStrategy statementStrategy = new InsertUserStatementStrategy(user);
+            preparedStatement = statementStrategy.makeStatement(connection);
 
             preparedStatement.executeUpdate();
 
-            preparedStatement = connection.prepareStatement("select last_insert_id()");
-            resultSet = preparedStatement.executeQuery();
+//            preparedStatement = connection.prepareStatement("select last_insert_id()");
+            //Statement.RETURN_GENERATED_KEYS를 InsertUserStatementStrategy에 매개변수로 추가로 넣어서 getGeneratedKeys()로 받아옴
+            resultSet = preparedStatement.getGeneratedKeys();
             resultSet.next();
 
             id = resultSet.getInt(1);
@@ -92,23 +93,13 @@ public class UserDao {
         return id;
     }
 
-    private PreparedStatement makePrepareStatement(User user, Connection connection) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(
-                "insert into userinfo(name, password) values (?, ?)");
-        preparedStatement.setString(1, user.getName());
-        preparedStatement.setString(2, user.getPassword());
-    }
-
     public void update(User user) throws SQLException {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement(
-                    "update userinfo set name = ?, password = ? where id = ?");
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getPassword());
-            preparedStatement.setInt(3, user.getId());
+            StatementStrategy statementStrategy = new UpdateUserStatementStrategy(user);
+            preparedStatement = statementStrategy.makeStatement(connection);
 
             preparedStatement.executeUpdate();
 
@@ -134,9 +125,8 @@ public class UserDao {
         PreparedStatement preparedStatement = null;
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement(
-                    "delete from userinfo where id = ?");
-            preparedStatement.setInt(1, id);
+            StatementStrategy statementStrategy = new DeleteUserStatementStrategy(id);
+            preparedStatement = statementStrategy.makeStatement(connection);
 
             preparedStatement.executeUpdate();
 

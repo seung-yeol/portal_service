@@ -22,13 +22,13 @@
       <file leaf-file-name="DaoFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/DaoFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="432">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,25 +47,37 @@
       <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/kr/ac/jejunu/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="726">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
-                <element signature="e#219#220#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <marker date="1523607524677" expanded="true" signature="340:375" ph="select * fro... userinfo" />
-                <marker date="1523607524677" expanded="true" signature="566:616" ph="insert into userinfo... " />
-                <marker date="1523607524677" expanded="true" signature="829:884" ph="update userinfo... " />
+                <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <marker date="1523609789051" expanded="true" signature="507:542" ph="select * fro... userinfo" />
+                <marker date="1523609789051" expanded="true" signature="1164:1214" ph="insert into userinfo... " />
+                <marker date="1523609789051" expanded="true" signature="1856:1911" ph="update userinfo... " />
+                <marker date="1523609789051" expanded="true" signature="2133:2166" ph="delete from userinfo... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcContext.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JdbcContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/JdbcContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="462">
+              <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#180#181#0" expanded="true" />
@@ -523,7 +535,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.14941406" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="jdbc&#9;PSI&#9;JAVA://kr.ac.jejunu.JdbcContext&#10;jeju&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/JejuConnectionMaker.java&#10;userDao&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/UserDao.java&#10;Dao&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/DaoFactory.java&#10;userDa&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/UserDao.java&#10;daofac&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/DaoFactory.java&#10;DaoF&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/DaoFactory.java" />
+    <property name="SearchEverywhereHistoryKey" value="userDa&#9;FILE&#9;file://D:/portal/5주차/src/main/java/kr/ac/jejunu/UserDao.java&#10;jdbc&#9;PSI&#9;JAVA://kr.ac.jejunu.JdbcContext&#10;jeju&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/JejuConnectionMaker.java&#10;userDao&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/UserDao.java&#10;Dao&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/DaoFactory.java&#10;daofac&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/DaoFactory.java&#10;DaoF&#9;FILE&#9;file://D:/portal/4주차/src/main/java/kr/ac/jejunu/DaoFactory.java" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -569,7 +581,7 @@
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="kr.ac.jejunu.*" />
+          <option name="PATTERN" value="kr.ac.jejunu.JdbcContext" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -599,7 +611,7 @@
     <configuration name="UserDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="kr.ac.jejunu.*" />
+          <option name="PATTERN" value="kr.ac.jejunu.JdbcContext" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -629,7 +641,7 @@
     <configuration name="UserDaoTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="kr.ac.jejunu.*" />
+          <option name="PATTERN" value="kr.ac.jejunu.JdbcContext" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -659,7 +671,7 @@
     <configuration name="UserDaoTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="kr.ac.jejunu.*" />
+          <option name="PATTERN" value="kr.ac.jejunu.JdbcContext" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -709,7 +721,7 @@
     <configuration name="kr.ac.jejunu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="kr.ac.jejunu.*" />
+          <option name="PATTERN" value="kr.ac.jejunu.JdbcContext" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -808,14 +820,11 @@
       <updated>1522997752945</updated>
       <workItem from="1522997755135" duration="9582000" />
       <workItem from="1523599395069" duration="108000" />
-      <workItem from="1523599633375" duration="8366000" />
+      <workItem from="1523599633375" duration="9438000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDaoTest - 2018.04.13 at 15h 43m 35s.xml">
-      <configuration name="UserDaoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserDaoTest - 2018.04.13 at 15h 44m 25s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
@@ -840,12 +849,15 @@
     <history-entry file="UserDaoTest - 2018.04.13 at 17h 19m 34s.xml">
       <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDaoTest_delete - 2018.04.13 at 15h 43m 22s.xml">
-      <configuration name="UserDaoTest.delete" configurationId="JUnit" />
+    <history-entry file="UserDaoTest - 2018.04.13 at 17h 55m 11s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDaoTest - 2018.04.13 at 17h 56m 18s.xml">
+      <configuration name="UserDaoTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18056000" />
+    <option name="totallyTimeSpent" value="19128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -853,7 +865,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -899,10 +911,10 @@
         <state relative-caret-position="384">
           <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -952,11 +964,13 @@
         <state relative-caret-position="288">
           <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
           <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <marker date="1523607524677" expanded="true" signature="340:375" ph="select * fro... userinfo" />
-            <marker date="1523607524677" expanded="true" signature="566:616" ph="insert into userinfo... " />
-            <marker date="1523607524677" expanded="true" signature="829:884" ph="update userinfo... " />
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <marker date="1523609789051" expanded="true" signature="507:542" ph="select * fro... userinfo" />
+            <marker date="1523609789051" expanded="true" signature="1164:1214" ph="insert into userinfo... " />
+            <marker date="1523609789051" expanded="true" signature="1856:1911" ph="update userinfo... " />
+            <marker date="1523609789051" expanded="true" signature="2133:2166" ph="delete from userinfo... " />
           </folding>
         </state>
       </provider>
@@ -966,10 +980,10 @@
         <state relative-caret-position="384">
           <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1019,25 +1033,19 @@
         <state relative-caret-position="600">
           <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <marker date="1523607524677" expanded="true" signature="340:375" ph="select * fro... userinfo" />
-            <marker date="1523607524677" expanded="true" signature="566:616" ph="insert into userinfo... " />
-            <marker date="1523607524677" expanded="true" signature="829:884" ph="update userinfo... " />
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <marker date="1523609789051" expanded="true" signature="507:542" ph="select * fro... userinfo" />
+            <marker date="1523609789051" expanded="true" signature="1164:1214" ph="insert into userinfo... " />
+            <marker date="1523609789051" expanded="true" signature="1856:1911" ph="update userinfo... " />
+            <marker date="1523609789051" expanded="true" signature="2133:2166" ph="delete from userinfo... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradlew" />
     <entry file="file://$PROJECT_DIR$/gradlew.bat" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/sql/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1100,24 +1108,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/DaoFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/StatementStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="144">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/JdbcContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/kr/ac/jejunu/UserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/JdbcContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,38 +1171,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/StatementStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <marker date="1523607524677" expanded="true" signature="340:375" ph="select * fro... userinfo" />
-            <marker date="1523607524677" expanded="true" signature="566:616" ph="insert into userinfo... " />
-            <marker date="1523607524677" expanded="true" signature="829:884" ph="update userinfo... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/jejunu/JdbcContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="726">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <marker date="1523609789051" expanded="true" signature="507:542" ph="select * fro... userinfo" />
+            <marker date="1523609789051" expanded="true" signature="1164:1214" ph="insert into userinfo... " />
+            <marker date="1523609789051" expanded="true" signature="1856:1911" ph="update userinfo... " />
+            <marker date="1523609789051" expanded="true" signature="2133:2166" ph="delete from userinfo... " />
           </folding>
         </state>
       </provider>

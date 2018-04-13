@@ -11,14 +11,15 @@ public class JdbcContext {
     }
 
     public User jdbcContextForGet(StatementStrategy statementStrategy) throws SQLException {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
         User user = null;
+        try {
+            connection = dataSource.getConnection();
+            preparedStatement = statementStrategy.makeStatement(connection);
 
-        //auto close됨
-        try(
-                Connection connection = dataSource.getConnection();
-                PreparedStatement preparedStatement = statementStrategy.makeStatement(connection);
-                ResultSet resultSet = preparedStatement.executeQuery()
-        ) {
+            resultSet = preparedStatement.executeQuery();
             if(resultSet.next()) {
                 user = new User();
                 user.setId(resultSet.getInt("id"));
@@ -139,8 +140,6 @@ public class JdbcContext {
         };
         return jdbcContextForInsert(statementStrategy);
     }
-
-
 
     public User queryForObject(String sql, Object[] params) throws SQLException {
         StatementStrategy statementStrategy = connection -> {

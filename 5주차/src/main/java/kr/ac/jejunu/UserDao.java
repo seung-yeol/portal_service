@@ -57,10 +57,9 @@ public class UserDao {
         Integer id;
         try {
             connection = dataSource.getConnection();
-            preparedStatement = connection.prepareStatement(
-                    "insert into userinfo(name, password) values (?, ?)");
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getPassword());
+            StatementStrategy statementStrategy = null;
+            preparedStatement = statementStrategy.makeStatement(user, connection);
+//            preparedStatement = makePrepareStatement(user, connection);
 
             preparedStatement.executeUpdate();
 
@@ -91,6 +90,13 @@ public class UserDao {
 
         }
         return id;
+    }
+
+    private PreparedStatement makePrepareStatement(User user, Connection connection) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement(
+                "insert into userinfo(name, password) values (?, ?)");
+        preparedStatement.setString(1, user.getName());
+        preparedStatement.setString(2, user.getPassword());
     }
 
     public void update(User user) throws SQLException {

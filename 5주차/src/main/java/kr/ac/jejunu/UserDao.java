@@ -11,49 +11,31 @@ public class UserDao {
     }
 
     public User get(int id) throws SQLException {
-        StatementStrategy statementStrategy = connection -> {
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from userinfo where id = ?");
-            preparedStatement.setInt(1, id);
-            return preparedStatement;
-        };
-
-        return jdbcContext.jdbcContextForGet(statementStrategy);
+        String sql = "select * from userinfo where id = ?";
+        Object[] params = new Object[]{id};
+        return jdbcContext.queryForObject(sql, params);
     }
 
     public Integer insert(User user) throws SQLException {
-        StatementStrategy statementStrategy = connection ->  {
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "insert into userinfo(name, password) values (?, ?)", Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getPassword());
+        String sql = "insert into userinfo(name, password) values (?, ?)";
+        Object[] params = new Object[]{user.getName(), user.getPassword()};
 
-            return preparedStatement;
-
-        };
-        return jdbcContext.jdbcContextForInsert(statementStrategy);
+        return jdbcContext.insert(sql, params);
     }
 
     public void update(User user) throws SQLException {
-        StatementStrategy statementStrategy = connection ->  {
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "update userinfo set name = ?, password = ? where id = ?");
-            preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2, user.getPassword());
-            preparedStatement.setInt(3, user.getId());
-            return preparedStatement;
-        };
-        jdbcContext.jdbcContextForUpdate(statementStrategy);
+        String sql = "update userinfo set name = ?, password = ? where id = ?";
+        Object[] params = new Object[]{user.getName(), user.getPassword(), user.getId()};
+
+        jdbcContext.update(sql, params);
     }
 
+
+
     public void delete(Integer id) throws SQLException {
-        StatementStrategy statementStrategy = connection ->  {
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "delete from userinfo where id = ?");
-            preparedStatement.setInt(1, id);
+        String sql = "delete from userinfo where id = ?";
+        Object[] params = new Object[]{id};
 
-            return preparedStatement;
-
-        };
-        jdbcContext.jdbcContextForUpdate(statementStrategy);
+        jdbcContext.update(sql, params);
     }
 }

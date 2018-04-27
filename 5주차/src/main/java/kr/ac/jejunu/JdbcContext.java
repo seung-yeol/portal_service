@@ -1,51 +1,33 @@
 package kr.ac.jejunu;
 
+import lombok.AllArgsConstructor;
+import lombok.Cleanup;
+
 import javax.sql.DataSource;
 import java.sql.*;
 
+@AllArgsConstructor
 public class JdbcContext {
     private DataSource dataSource;
 
-    public JdbcContext(DataSource dataSource){
-        this.dataSource = dataSource;
-    }
-
     public User jdbcContextForGet(StatementStrategy statementStrategy) throws SQLException {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        ResultSet resultSet = null;
         User user = null;
-        try {
-            connection = dataSource.getConnection();
-            preparedStatement = statementStrategy.makeStatement(connection);
 
-            resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()) {
-                user = new User();
-                user.setId(resultSet.getInt("id"));
-                user.setName(resultSet.getString("name"));
-                user.setPassword(resultSet.getString("password"));
-            }
-        } finally {
-            if (resultSet != null)
-                try {
-                    resultSet.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            if (preparedStatement != null)
-                try {
-                    preparedStatement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            if (connection != null)
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+        //Cleanup을 하면
+        @Cleanup
+        Connection connection = dataSource.getConnection();
+        @Cleanup
+        PreparedStatement preparedStatement = statementStrategy.makeStatement(connection);
+        @Cleanup
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        if(resultSet.next()) {
+            user = new User();
+            user.setId(resultSet.getInt("id"));
+            user.setName(resultSet.getString("name"));
+            user.setPassword(resultSet.getString("password"));
         }
+
         return user;
     }
     public void jdbcContextForUpdate(StatementStrategy statementStrategy) throws SQLException {
@@ -143,13 +125,10 @@ public class JdbcContext {
 
     public User queryForObject(String sql, Object[] params) throws SQLException {
         StatementStrategy statementStrategy = connection -> {
-
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
             for (int i = 0 ; i < params.length ; i++){
                 preparedStatement.setObject(i + 1, params[i]);
             }
-
             return preparedStatement;
         };
 

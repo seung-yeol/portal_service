@@ -40,7 +40,8 @@ public class UserDao {
         Object[] params = new Object[]{user.getName(), user.getPassword()};
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
-        int update =  jdbcTemplate.update(con -> {
+        //update 는 업데이트된 갯수가 나옴
+        int update = jdbcTemplate.update(con -> {
             PreparedStatement preparedStatement = con.prepareStatement(
                     sql, Statement.RETURN_GENERATED_KEYS);
 

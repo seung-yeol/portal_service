@@ -13,6 +13,8 @@ repositories {
 }
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.16.20'
+
     compile 'mysql:mysql-connector-java:5.1.37'
     compile "org.springframework:spring-context:${springVersion}"
     compile "org.springframework:spring-beans:${springVersion}"

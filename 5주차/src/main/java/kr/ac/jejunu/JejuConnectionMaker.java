@@ -22,7 +22,6 @@ public class JejuConnectionMaker implements ConnectionMaker {
 
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
-        className = "com.mysql.jdbc.Driver";
         Class.forName(className);
 
         return DriverManager.getConnection(url, userName, password);

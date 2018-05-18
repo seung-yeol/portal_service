@@ -1,0 +1,3 @@
+BeanNameUrl 을 먼저 하고 그다음
+SimpleUrl 을 찾음
+그후 RequestMethod를 찾음. << 요거는 SimpleUrl이 없어야 실행이 됨.

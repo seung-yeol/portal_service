@@ -1,0 +1,44 @@
+Docker 꼭 써보랜
+
+Deployment (배포)
+
+- WAS configuration deployment
+
+- resource(templete) deployment   
+- classes deployment   			보통 요 3개는 하나의 파일로 배포함.
+- library deployment
+
+Docker는 요 위에 것들을 배포해줄 수 있음.
+
+대체적으로 요런 방법으로 배포함
+- FTP
+- SCP
+- Shell Script
+- Capistrano
+- Webistrano
+- Ant
+- Gradle
+
+CI (Continuous Integration) : 지속적인 통합(배포)
+- Code Conflict
+- Agile
+- Continuous Intergration
+
+
+
+Docker
+
+Virtualiztaion
+Paas
+Not VM  >> 성능이 느리지 않음 ! (OS 없음!) 
+Container
+UseLXC (linux container) 
+
+Docker의 단점 : 
+정적인 어플리케이션일때 이용됨 (뭔말이야..)
+파일 업로드같은거 안된데.
+log확인이 불가능함.
+
+
+Dockerfile
+

@@ -1,0 +1,52 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : kr.ac.jejunu : helloworld-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/helloworld-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/helloworld-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="helloworld_main/web/Web Gradle : helloworld-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="helloworld_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.37" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.integration:spring-integration-groovy:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.integration:spring-integration-scripting:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.integration:spring-integration-core:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy-all:2.4.12" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.retry:spring-retry:1.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:3.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Gradle: org.reactivestreams:reactive-streams:1.0.2" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-oxm/5.0.4.RELEASE/f1a6225817e1ed21d2f76ac190e46d16f4374b42/spring-oxm-5.0.4.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.3/193b96ef555b2f2573b576887ba9a93e4bf48e8c/jackson-databind-2.9.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.3/ea9b6fc7bc3ccba9777b0827091f9aa1f8580371/jackson-core-2.9.3.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

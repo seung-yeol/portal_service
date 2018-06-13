@@ -3,6 +3,4 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost/jeju?characterEncoding=utf-8
     username: root
-    password: 1234
-
-    #application.aplication 파일을 application.yml로 바꿈.  이 주석 지워야 런 했을때 서버 켜진다.
+    password: DHtmdduf1!
